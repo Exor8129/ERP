@@ -1,0 +1,36 @@
+/* layout.css */
+.layout-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .sidenavi {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background: var(--primary-bg-color);
+    left: 0;
+    border-top-right-radius:20px ;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .main-content {
+    margin-left: 300px; /* Same as the width of the sidenavi */
+    width: calc(100% - 300px); /* Adjust width to take remaining space */
+    padding: 20px;
+    background: var(--usual-bg-color);
+  }
+
+  .top-section{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    margin-top: 10px;
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+  }
+ 
+  

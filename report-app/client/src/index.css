@@ -1,0 +1,13 @@
+:root {
+  --primary-bg-color:#F4F6FF;
+  --secondary-bg-color:#10375C;
+  --usual-bg-color:white;
+  --border-radius: 2px;
+  --border-width: 2px;
+  --full-width: 100vw;
+  --full-height: 100vh;
+  --text-color: white;
+  --font-size-large: 24px;
+  --text-muted:#80CBC4;
+  --icon-color:#F3C623;
+}

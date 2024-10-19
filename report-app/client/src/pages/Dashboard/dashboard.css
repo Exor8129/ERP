@@ -1,0 +1,81 @@
+.container{
+    background: var(--secondary-bg-color);
+    padding: 10px;
+    width: 100%;
+   
+}
+.main-container {
+  
+    width: 100vw;
+    height: 100vh;
+    background:var( --usual-bg-color);
+    border-radius: 30px;
+    border: ridge 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    gap: 15px;
+}
+    
+.tab{
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    border: ridge 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: var(--secondary-bg-color); /* Add a background color for a button look */
+    color: #000; /* Text color */
+    font-size: 16px;
+    outline: none; /* Removes button outline */
+    border: none; /* Remove default button borders */
+    
+    
+
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+
+}
+.tab:hover + .icon{
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background: var(--secondary-bg-color);
+    
+    
+}
+
+
+.tab:hover .icon{
+    color: var(--icon-color);
+}
+
+.tab:hover + .name {
+    color: blue;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+  
+  .name {
+    margin-top: 8px;
+    font-size: 16px; /* Default font size */
+    color: black;    /* Default color */
+  }
+
+
+
+
+
+
+
