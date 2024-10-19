@@ -1,36 +1,137 @@
-/* layout.css */
-.layout-container {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  .sidenavi {
-    position: fixed;
-    height: 100vh;
-    width: 300px;
-    background: var(--primary-bg-color);
-    left: 0;
-    border-top-right-radius:20px ;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-   
-  }
-  
-  .main-content {
-    margin-left: 300px; /* Same as the width of the sidenavi */
-    width: calc(100% - 300px); /* Adjust width to take remaining space */
-    padding: 20px;
-    background: var(--usual-bg-color);
-  }
 
-  .top-section{
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    margin-top: 10px;
-    /* justify-content: center; */
-    align-items: center;
-    display: flex;
-  }
- 
+/* Top section code starts here */
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sidenavi {
+  position: fixed;
+  height: 100vh;
+  background: var(--primary-bg-color);
+  left: 0;
+  border-top-right-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s; /* Smooth transition for width */
   
+}
+.top-section{
+  gap: 5px;
+}
+.name{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+.name2{
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: red;
+  font-size: 20px;
+}
+
+.logo{
+  margin-left: 5px;
+}
+
+.sidenavi.open {
+  width: 300px; /* Full width when open */
+}
+
+.sidenavi.closed {
+  width: 60px; /* Mini width when closed */
+}
+
+.main-content {
+  margin-left: 300px; /* Same as the width of the sidenavi when open */
+  width: calc(100% - 300px); /* Adjust width to take remaining space when open */
+  padding: 20px;
+  background: var(--usual-bg-color);
+  transition: margin-left 0.3s; /* Smooth transition for margin */
+}
+
+.sidenavi.closed + .main-content {
+  margin-left: 60px; /* Adjusted margin when sidenav is closed */
+  width: calc(100% - 60px); /* Adjust width for main content */
+
+}
+.logo-name {
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+  opacity: 1; /* Fully visible */
+}
+
+.logo-name.hidden {
+  opacity: 0; /* Fully transparent */
+  pointer-events: none; /* Prevent any interaction when hidden */}
+
+  .logo-name.visible {
+    opacity: 1; /* Fully opaque */
+  }
+.top-section {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  margin-top: 10px;
+  align-items: center;
+}
+.menu .open{
+  visibility: visible;
+
+}
+.menu.closed{
+  visibility: hidden;
+
+}
+
+.menu{
+  margin-left: 120px;
+
+}
+.menu :hover{
+  cursor: pointer;
+  transform: rotate(180deg); /* Rotate 90 degrees */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover{
+  cursor: pointer;
+  transform:scale(1.2); /* Rotate 90 degrees */
+  transition: transform .3s ease; /* Smooth transition */
+  
+}
+/* Top section code ends here */
+
+
+/* Business-Profile section code starts here  */
+
+.business-container{
+  width:100px ;
+  height: 100px;
+  background: blueviolet;
+  margin-left: 80px;
+  margin-top: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.business-icons{
+  margin-left: 80px;
+  width: 100px;
+  height: 30px;
+  background:turquoise;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  gap: 10px;
+
+}
+
+/* Business-Profile section code ends here  */
