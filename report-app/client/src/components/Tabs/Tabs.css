@@ -17,5 +17,11 @@
   .tab svg {
     margin-right: 10px; /* Space between icon and text */
   }
- 
+  .hidden {
+    display: none; /* Hides the label completely */
+  }
+  
+  .visible {
+    display: inline; /* Shows the label */
+  }
   

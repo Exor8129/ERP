@@ -119,6 +119,10 @@
 
 }
 
+.business-container.closed{
+  visibility: hidden;
+}
+
 .business-icons{
   margin-left: 80px;
   width: 100px;
@@ -132,13 +136,24 @@
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   gap: 10px;
+  transition: flex-direction 0.3s ease, height 0.3s ease;
 
 }
+
+.business-icons.closed {
+  flex-direction: column; /* Change to vertical when closed */
+  height: 120px; /* Adjust height if needed */
+  width: 50px;
+  margin-left:3px;
+  margin-top: -80px;
+}
+
 .fadeout-line {
   height: 1px; /* Adjust the height as needed */
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #789DBC 50%, rgba(255, 255, 255, 0) 100%);
   /* The colors can be adjusted to your background color */
   margin: 20px 0; /* Add some margin for spacing */
 }
+
 
 /* Business-Profile section code ends here  */

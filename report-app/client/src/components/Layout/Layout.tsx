@@ -77,10 +77,10 @@ const Layout = () => {
 
         {/* Business-Profile section code starts here */}
 
-        <div className="business-container">
+        <div className={`business-container ${open?"open" : "closed"}`}>
           <div className="business-logo">logo</div>
         </div>
-        <div className="business-icons">
+        <div className={`business-icons ${open?"open" : "closed"}`}>
           <MessageSquare />
           <ArrowRightLeft />
           <Sun />
@@ -95,7 +95,9 @@ const Layout = () => {
             label="Sales"
             icon={ReceiptIndianRupee}
             isActive={activeTab === "Sales"}
-            onClick={() => handleTabClick("Sales")}
+            onClick={() => handleTabClick("Sales") }
+            isSidenavOpen={open}
+           
           />
 
           <Tab
@@ -103,6 +105,7 @@ const Layout = () => {
             icon={PackagePlus}
             isActive={activeTab === "Purchase"}
             onClick={() => handleTabClick("Purchase")}
+            isSidenavOpen={open}
           />
 
           <Tab
@@ -110,6 +113,7 @@ const Layout = () => {
             icon={NotebookPen}
             isActive={activeTab === "Accounts"}
             onClick={() => handleTabClick("Accounts")}
+            isSidenavOpen={open}
           />
 
           <Tab
@@ -117,6 +121,7 @@ const Layout = () => {
             icon={Unplug}
             isActive={activeTab === "Complaints"}
             onClick={() => handleTabClick("Complaints")}
+            isSidenavOpen={open}
           />
           <div className="fadeout-line"></div>
         </div>
@@ -130,6 +135,7 @@ const Layout = () => {
             icon={Settings}
             isActive={activeTab === "Settings"}
             onClick={() => handleTabClick("Settings")}
+            isSidenavOpen={open}
           />
 
           <Tab
@@ -137,6 +143,7 @@ const Layout = () => {
             icon={LogOut}
             isActive={activeTab === "Logout"}
             onClick={() => handleTabClick("Logout")}
+            isSidenavOpen={open}
           />
         </div>
         {/* Footer section code starts here */}
