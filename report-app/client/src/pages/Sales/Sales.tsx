@@ -1,13 +1,9 @@
-
 import "./sales.css";
 
 import InputField from "../../components/InputField/InputField";
 
-
-
 const Sales = () => {
- 
-  const items=[
+  const items = [
     "Event Horizon",
     "Celebrate Events",
     "Dream Weddings",
@@ -27,21 +23,19 @@ const Sales = () => {
     "Timeless Occasions",
     "Sparkle Events",
     "Signature Celebrations",
-    "Creative Occasions"
-  ]
+    "Creative Occasions",
+  ];
 
-  
-  
+  const transporter=["ANK","Speed N Safe","Babu Courier","Kunjappa"]
 
   return (
     <div className="salesPage-container">
       <div className="parent-container">
         <div className="child-container">
           <div className="user-panel-container">
-          <InputField 
-          fieldName="Party Name"
-          items={items} />
-            
+            <InputField fieldName="Party Name" items={items} />
+
+            <InputField fieldName="Transporter" items={transporter} />
           </div>
           <div className="party-details-container">
             <h1>Party-Details</h1>
@@ -55,7 +49,6 @@ const Sales = () => {
 
       <div className="slip-container">
         <h1>Slip-Details</h1>
-       
       </div>
     </div>
   );
