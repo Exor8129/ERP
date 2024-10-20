@@ -1,0 +1,21 @@
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .tab:hover {
+    background: rgba(205, 98, 98, 0.1); /* Change to your desired hover color */
+  }
+  
+  .tab.active {
+    background: rgba(246, 245, 245, 0.2); /* Change to your desired active color */
+  }
+  
+  .tab svg {
+    margin-right: 10px; /* Space between icon and text */
+  }
+ 
+  
