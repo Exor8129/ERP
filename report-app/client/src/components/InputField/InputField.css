@@ -1,22 +1,27 @@
 .input-box{
 position: relative;
-width: 250px;
+/* width: 250px; */
+width: 100%;
+/* z-index: ; */
+
+/* background: red; */
 }
 
 .input-box input{
-width: 200px;
+width: 300px;
 padding: 10px;
 border-radius: 5px;
-border: 1px solid blue;
+border: 1px solid #ccc;
 outline: none;
 color: rgb(133, 126, 126);
 font-size: 1em;
+z-index: -1000;
 }
 
 .input-box span{
     position: absolute;
     left: 0;
-    margin-top: 10px;
+    margin-top:-48px;
     margin-left: 5px;
     pointer-events: none;
     font-size: 1em;

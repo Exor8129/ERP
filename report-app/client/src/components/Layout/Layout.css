@@ -14,6 +14,7 @@
   border-top-right-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
   transition: width 0.3s; /* Smooth transition for width */
+  z-index: 1500;
   
 }
 .top-section{
