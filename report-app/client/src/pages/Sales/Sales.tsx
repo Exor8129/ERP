@@ -1,6 +1,6 @@
 import "./sales.css";
 import InputField from "../../components/InputField/InputField";
-import { OctagonPause, PackagePlus, Pencil, Printer } from "lucide-react";
+import { Trash2,OctagonPause, PackagePlus, Pencil, Printer } from "lucide-react";
 import { ItemSelecterPopup } from "../../components/ItemSelecterPopup/ItemSelecterPopup";
 import { useState } from "react";
 import SimpleDialogDemo from "../../components/Dialog/Dialog";
@@ -158,6 +158,8 @@ const Sales = () => {
         <div className="icon-container"><OctagonPause size={30} strokeWidth={1.4} /></div>
         <div className="icon-container"><Pencil size={30} strokeWidth={1.4} /></div>
         <div className="icon-container"><Printer size={30} strokeWidth={1.4} /></div>
+        <div className="icon-container"><Trash2 size={30} strokeWidth={1.4} /></div>
+        
         
         
       </div>
